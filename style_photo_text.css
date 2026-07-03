@@ -1,0 +1,102 @@
+/* ===== 图文集页面样式 ===== */
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url('wallpaper/wallpaper_BW2026.jpg');
+    background-size: cover;        /* 图片尽量铺满整个屏幕 */
+    background-position: center;   /* 居中显示 */
+    background-attachment: fixed;  /* 背景固定，滚动内容时图片不动 */
+    color: #333;
+    text-align: center;
+    padding-top: 60px;   /* 根据导航栏实际高度调整，可以改成60~80px */
+}
+
+
+/* 复用 .content-card 的卡片效果（可以从 thoughts.css 复制过来） */
+.content-card {
+    max-width: 800px;
+    margin: 100px auto 40px;
+    padding: 40px 50px;
+    background: rgba(255, 255, 255, 0.75);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    color: #333;
+    text-align: center;
+}
+
+.content-card h1 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-family: 'Ma Shan Zheng', cursive;
+}
+
+/* 每个图文块的容器 */
+.text-photo-item {
+    margin-bottom: 50px;      /* 块与块之间的垂直间距 */
+}
+
+/* 图片样式 */
+.text-photo-item img {
+    display: block;
+    max-width: 100%;
+    max-height: 800px;        /* 👈 限制最大高度，数值可按需调整 */
+    width: auto;
+    height: auto;
+    margin: 0 auto 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* 讲解文字 */
+.text-photo-item p {
+    text-indent: 2em;      /* 首行缩进两个汉字宽度 */
+    text-align: left;         /* 或 center，看你的喜好 */
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    max-width: 600px;         /* 限制文字宽度，提升阅读感 */
+    color: #444;
+}
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    -webkit-backdrop-filter: blur(5px);  /* 兼容 Safari 9+ */
+    backdrop-filter: blur(5px);          /* 标准属性，兼容其他浏览器 */
+    z-index: 1000;
+    padding: 10px 0;
+}
+/* 去掉列表默认样式，让链接横向排列 */
+.top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;  /* 居中排列链接 */
+    gap: 40px;                /* 链接之间的间距 */
+}
+
+.top-nav li {
+    display: inline-block;
+}
+
+/* 链接样式 */
+.top-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.top-nav a:hover {
+    color: #feca57;           /* 鼠标悬停时变色（和你渐变里的黄色呼应） */
+}
