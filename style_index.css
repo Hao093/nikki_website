@@ -162,3 +162,71 @@ p {
 .top-nav a:hover {
     color: #feca57;           /* 鼠标悬停时变色（和你渐变里的黄色呼应） */
 }
+/* ===== 灯箱内的点赞和留言区域 ===== */
+
+.lightbox-interact {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 90%;
+    text-align: left;
+}
+.like-section {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.like-section button {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #ff6b6b;
+    transition: transform 0.2s;
+}
+.like-section button:hover {
+    transform: scale(1.2);
+}
+.comment-section h3 {
+    margin: 0 0 5px;
+    font-size: 1rem;
+    color: #feca57;
+}
+.comment-section ul {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    margin: 0 0 10px;
+}
+.comment-section ul li {
+    padding: 3px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    font-size: 0.9rem;
+}
+.comment-input {
+    display: flex;
+    gap: 5px;
+}
+.comment-input input {
+    flex: 1;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.9);
+    color: #333;
+}
+.comment-input button {
+    padding: 5px 15px;
+    background: #48dbfb;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
