@@ -27,5 +27,7 @@ const imageFiles = [
     "witch.jpg",
     "water_daughter.jpg",
     "wheat.jpg",
-    "ts.jpg"
+    "ts.jpg",
+    "wash_sheep.jpg",
+    "wash_faint.jpg"
 ];
